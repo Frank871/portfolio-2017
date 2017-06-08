@@ -17,6 +17,16 @@ body {
 /* typing font animation color and text/deco.*/
 * { color:white; text-decoration: none;}
 
+img{
+    opacity: 1.0;
+    
+}
+
+img:hover {
+    opacity: 0.4;
+    
+}
+
 /* h2 styling */
 h2 {
     font-family: 'Stardos Stencil', cursive;
@@ -97,6 +107,10 @@ hr {
 #big-panel {
 	text-align: center;
 	background-color: white;
+}
+
+#submit {
+     padding: 20px;
 }
 
 /* footer styling and contact info. */
