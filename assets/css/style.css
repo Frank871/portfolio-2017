@@ -22,6 +22,11 @@ img{
     
 }
 
+h3 {
+	
+	color: black;
+}
+
 img:hover {
     opacity: 0.4;
     
