@@ -171,15 +171,20 @@ hr {
 
 @media screen and (max-width:640px) {
 
+	.main-container{
+		width: 90%
+	}
+
+
 	.jumbotron{
 	position: relative;
-	left: 42px;
+	left: 55px;
 	
    }
 
    .panel {
 	position: relative;
-	left: 42px;
+	left: 55px;
 	
 }
 
