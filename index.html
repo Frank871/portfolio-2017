@@ -3,87 +3,152 @@
   <head>
     <meta charset="UTF-8">
     <title>Franklin Segura</title>
+    <script src="https://use.fontawesome.com/b5245c14e7.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Stardos+Stencil" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <!--main container holding all elements-->
-    <div class="main-container">
-      <!--social icons and H1-->
-      <div class="container-fluid">
-        <h2>Franklin Segura</h2>
-        <div class="sidebar">
-          <a href="https://github.com/Frank871" target="_blank"><img src="assets/images/git-hub-icon.png" alt="github icon" class="icon github"></a>
-          <a href="https://www.linkedin.com/in/franklin-segura-32b016134" target="_blank"><img src="assets/images/linkedin-icon.png" alt="Linkedin icon" class="icon linkedin"></a>
-          <a href="http://stackoverflow.com/users/7390925/fsegura871" target="_blank"><img src="assets/images/stack-overflow.png" alt="Stack overflow icon" class="icon stackoverflow"></a>
-        </div>
-      </div>
-      <hr>
-      
-      
-      <!--about me area-->
-      <div class="jumbotron">
-        <h1>
-        <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Frank.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href="#first">About Me</a></li>
+        <li><a href="#myCarousel">Projects</a></li>
+        <li><a href="#third">Contact</a></li>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div id="parallax">
+
+   <h1>Welcome</h1>
+
+</div>
+
+<div class="jumbotron" id="first">
+        <h2>
+        <a href="https://www.linkedin.com/in/franklin-segura-32b016134" class="typewrite" data-period="2000" data-type='[ "Hi, Im Frank.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
           <span class="wrap"></span>
         </a>
-        </h1>
+        </h2>
         <img src="assets/images/me1.png"></img>
         
         <p>I was born and raised in NYC, as a kid I was always into technology and video games. When I was a kid I remembered playing the Nintendo console when it was first was introduced to the US. Playing Duck Hunt was my favorite Nintendo past time. In my teen year's I became fascinated with online PC gaming.  I had gotten deeply emerged into the MMORPG/FPS world of PC gaming. I began wanting to learn more about computer's in order to run my games smoothly.</p>
         &nbsp
         <p>I started learning the aspects of how a computer works from the hardware side of it; Molding processes, RAM, hard drives, video cards and sound cards. I began using programs to overclock CPU and GPU processors in order to achieve maximum performance on my video gaming experience. In turn, I have decided to switch career fields from health care to technology to gain more knowledge and possibly enjoy something similar to a life long hobby, which is web development.</p>
-      </div>
-      <!--project area with clickable pics-->
-      <div class="panel panel-custom-black">
-        <div class="panel-heading">
-          Projects
-        </div>
-        <div class="panel-body">
-          <div class="work">
-             <div class="work">
-                <h3>Friend Finder</h3>
-                <a href="https://frozen-journey-69629.herokuapp.com/">
-                <img src="assets/images/increase-iphone.png" alt="iphone-display"/></a>
-                <p>In this project, I created a Mock Friend Finding application with stored API data.<br>I used Node.js with Express,Path and Body-Parser packages.<p>
-            </div>
-            <h3>Trivia Game</h3>
-            <a href="https://johnwicktrivia87.herokuapp.com/">
-            <img src="assets/images/phone-display.png" alt="phone-display"/></a>
-            <p> In this project I was able to create a <br> trivia game using HTML,CSS, Javascript<br> and jQuery.<p>
-            </div>
-            <div class="work">
-              <h3>Pool Service</h3>
-              <a href="https://infinite-wave-81576.herokuapp.com/">
-              <img src="assets/images/apple-ipad.png" alt="ipad-display"/></a>
-              <p>Lead developer for front-end development of<br>a group project of three. Developed and designed HTML,<br> CSS & Javascript for a mock pool service application.<p>
-              </div>
-              <div class="work">
-                <h3>Food Application</h3>
-                <a href="https://mysterious-headland-12194.herokuapp.com/">
-                <img src="assets/images/iphone-6.png" alt="iphone-display"/></a>
-                <p>Lead developer for front-end and back-end development<br>of group project of  four. Developed and designed  HTML, CSS<br>and Ajax/API calling per back-end  development for application.<p>
+</div>
+
+<div id="parallax2">
+
+   <h1>Projects</h1>
+
+</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+            <a href="https://frozen-journey-69629.herokuapp.com/">
+                <img src="assets/images/friend.jpg"></a>
+                <div class="carousel-caption">
                 </div>
-              </div>
             </div>
+            <!-- End Item -->
+            <div class="item">
+            <a href="https://johnwicktrivia87.herokuapp.com/">
+                <img src="assets/images/john.jpg"></a>
+                <div class="carousel-caption">
+          
+                </div>
+            </div>
+            <!-- End Item -->
+            <div class="item">
+            <a href="https://infinite-wave-81576.herokuapp.com/">
+                <img src="assets/images/buoy.jpg"></a>
+                <div class="carousel-caption">
+                    
+                </div>
+            </div>
+            <!-- End Item -->
+            <div class="item">
+            <a href="https://movie-mania01.herokuapp.com/">
+                <img src="assets/images/movie.jpg"></a>
+                <div class="carousel-caption">
+                    
+                </div>
+            </div>
+            <!-- End Item -->
+        </div>
+        <!-- End Carousel Inner -->
+        <ul class="nav nav-pills nav-justified">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Friend Finder<small>In this website, I created a Mock Friend Finding application with stored API data.
+            I used Node.js with Express,Path and Body-Parser packages.</small></a></li>
+            <li data-target="#myCarousel" data-slide-to="1"><a href="#">John Wick Travia<small>In this website I was able to create a trivia game using HTML,CSS, Javascript and jQuery. Looking to add more features to the game.</small></a></li>
+            <li data-target="#myCarousel" data-slide-to="2"><a href="#">Buoy<small>Lead developer for front-end development of
+                a group project of three. Developed and designed HTML,
+                CSS & Javascript for a mock pool service application.</small></a></li>
+            <li data-target="#myCarousel" data-slide-to="3"><a href="#">Movie Mania<small>In this website I used HTML, CSS3, jQuery, Javascirpt and Ajax/API calling. Will be Looking to add different features to the gify's. </small></a>
+            </li>
+        </ul>
+    </div>
+    <!-- End Carousel -->
+</div>
+
+<div id="parallax3">
+
+   <h1>Contact</h1>
+
+</div>
+
+
+<!--footer start from here-->
+<footer>
+  <div class="container" id="third">
+    <div class="row">
+    </div>
+      <div class="col-md-4 col-sm-6 footerleft ">
+        <div class="logofooter">Connect</div>
+          
+          <div class='demopadding'>
+          <div class='icon social gh'> <a href="https://github.com/Frank871"> <i class='fa fa-github'></i></div>
+          <div class='icon social sf'> <a href="http://stackoverflow.com/users/7390925/fsegura871"> <i class='fa fa-stack-overflow'></i></div>
+          <div class='icon social in'> <a href="https://www.linkedin.com/in/franklin-segura-32b016134"> <i class='fa fa-linkedin'></i></div>
+          <div class='icon social em'> <a href="mailto:fsegura56734@hotmail.com""> <i class='fa fa-envelope'></i></div>
+        </div>  
+      
+    </div>
+    <div class="phone">
+          <i class="fa fa-phone-square extraClass" aria-hidden="true"></i> <h4>Phone: 352-396-8962</h4>
+      </div>
+</footer>
+<!--footer start from here-->
+
+<div class="copyright">
+  <div class="container">
+    <div class="col-md-6">
+      <p>© 2017 - All Rights with Franklin Segura</p>
+    </div>
+    <div class="col-md-6">
+      <ul class="bottom_ul">
+        <li><a href="#"></a></li>
+        <li><a href="#first">About me</a></li>
+        <li><a href="#myCarousel">Projects</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+          <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+                
+           <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
             
-            <!--footer with email and contact info-->
-            <div class="footer">
-              <div id="big-panel" class="bg-info text-left default">
-                <form action="mailto:fsegura56734@hotmail.com? subject=Portfolio_Websit_Form_Submission" method="post" enctype="text/plain">
-                  <div class="contact-me">
-                    <h2>Phone: 352-396-8962</h2>
-                    <br>
-                    <button id="submit" type="submit" class="btn btn-lg-default">Email Me Here</button>
-                  </div>
-                </form>
-              </div>
-              <br>
-              <p>&copy; Copyright Franklin Segura 2017</p>
-            </div>
-          </div>
           <!-- javascript link to js file-->
           <script src="assets/javascript/index.js" type="text/javascript" charset="utf-8" async defer></script>
           

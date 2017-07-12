@@ -1,193 +1,199 @@
-/* body styling with Gradient animations */
 body {
-     background: linear-gradient(132deg, #727272, #0b12bb);
-     background-size: 400% 400%;
-     animation: BackgroundGradient 30s ease infinite;
-    
+    margin: 0px;
+    padding: 0px;
 }
 
+#parallax {
 
-@keyframes BackgroundGradient {
+    background: url('../images/macs.jpeg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: table;
+    margin: 0px;
+}
 
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
+#parallax2 {
+
+    background: url('../images/macbook.jpeg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: table;
+    margin: 0px;
 
 }
+
+#parallax3 {
+
+    background: url('../images/macbook2.jpeg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: table;
+    margin: 0px;
+
+}
+
 /* typing font animation color and text/deco.*/
 * { color:white; text-decoration: none;}
 
-img{
-    opacity: 1.0;
-    
+h1 {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0px;
 }
 
-h3 {
-	
-	color: black;
-}
-
-img:hover {
-    opacity: 0.4;
-    
-}
-
-/* h2 styling */
 h2 {
-    font-family: 'Stardos Stencil', cursive;
-	color: black;
-	font-size: 40px;
-
+  font-size: 50px;
+  text-align: center;
 }
 
-/* hr line styling */
-hr {
+h3{
+  font-size: 100px;
+}
 
-   position: relative;
-   color: black;
-   border: inset;
-   width: 60%;
-}  
 
-/* main content area styling */
-.main-container{
+.navbar-static-top { 
+padding: 10px;
+margin : 0 !important; 
 
-	position: relative;
-	top: 20px;
-	font-size: 24px;
-    color: black;
-    background-color: white;
-    width:  95%;
-    border: 6px double gray;
-    left: 40px;
-    padding-bottom: 60px;
-    
 }
 /* about me area */
 .jumbotron{
-	position: relative;
-	left: 120px;
-	width: 80%;
-	text-align: center;
-	background-color: black;
-	color: white;
-}
- /* navbar styling */
-.navbar .navbar-default{
-	width: 60%;
-}
 
-/* icon styling */
-.sidebar{
-	position: relative;
-    bottom: 50px;
-	float: right;
-	
-}
 
-/* project panel styling */
-.panel {
-	width: 80%;
-	position: relative;
-	left: 120px;
-	text-align: center;
-}
-
-/* project panel styling */
-.panel-body p{
-
-    color: black;
-}
-
-.panel-custom-black {
-    border-color: silver;
-}
-.panel-custom-black > .panel-heading {
-    background: black; 
-    color: white;
-    border-color: silver;
     text-align: center;
+    vertical-align: middle;
+    background-color: black;
+    color: white;
+    margin : 0 !important; 
 }
 
-#big-panel {
-	text-align: center;
-	background-color: white;
+.carousel-inner > .item > img > {
+    
+    height:580px;
+    
 }
 
-#submit {
-     padding: 20px;
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
 }
 
-/* footer styling and contact info. */
-.footer p{
-	position: relative;
-	top: 25px;
-	color: black;
-	font-family: 'Stardos Stencil', cursive;
-	font-size: 18px;
-	text-align: center;
+
+#myCarousel .nav a small
+{
+    
+    padding: 20px;
+    display: block;
+
+}
+#myCarousel .nav
+{
+    background: black;
+}
+.nav-justified > li > a
+{
+    border-radius: 0px;
+}
+.nav-pills>li[data-slide-to="0"].active a { background-color: #16a085; }
+.nav-pills>li[data-slide-to="1"].active a { background-color: crimson; }
+.nav-pills>li[data-slide-to="2"].active a { background-color: #2980b9; }
+.nav-pills>li[data-slide-to="3"].active a { background-color: #8e44ad; }
+
+
+/*footer starts here */
+
+.extraClass{
+
+    font-size: 50px;
 }
 
-/* website responsiveness */
-@media screen and (max-width:980px) {
-
-	.main-container{
-
-	position: relative;
-    left: 20px;
- }
-
- .jumbotron{
-	position: relative;
-	left: 74px;
-	
-	
-   }
-
-   .panel {
+.phone {
     position: relative;
-	left: 74px;
-	
-
+    top: 65px;
+    float: right;
 }
 
+footer { background-color:#0c1a1e; min-height:350px; font-family: 'Open Sans', sans-serif; }
+.footerleft { margin-top:50px; padding:0 36px; }
+.logofooter { margin-bottom:10px; font-size:25px; color:#fff; font-weight:700;}
 
-@media screen and (max-width:768px) {
+.footerleft p { color:#fff; font-size:12px !important; font-family: 'Open Sans', sans-serif; margin-bottom:15px;}
+.footerleft p i { width:20px; color:#999;}
 
-	.jumbotron{
-	position: relative;
-	left: 74px;
-	
-	
-   }
 
-   .panel {
-    position: relative;
-	left: 74px;
-	
+.paddingtop-bottom {  margin-top:50px;}
+.footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
+.footer-ul li { line-height:29px; font-size:12px;}
+.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
+.footer-ul i { margin-right:10px;}
+.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
+ 
+ 
+
+ 
+ .icon-ul { list-style-type:none !important; margin:0px; padding:0px;}
+ .icon-ul li { line-height:75px; width:100%; float:left;}
+ .icon { float:left; margin-right:5px;}
+ 
+ 
+ .copyright { min-height:40px; background-color:#000000;}
+ .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
+ .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+ .post p { font-size:12px; color:#FFF; line-height:20px;}
+ .post p span { display:block; color:#8f8f8f;}
+ .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
+ .bottom_ul li { float:left; line-height:40px;}
+ .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+ .bottom_ul li a { color:#FFF;  font-size:12px;}
+
+
+.icon {
+    position:relative;
+    text-align:center;
+    width:0px;
+    height:0px;
+    padding:20px;
+    border-top-right-radius:    20px;
+    border-top-left-radius:     20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius:  20px;  
+    color:#FFFFFF;
 }
-
+.icon i {
+    font-size:20px;
+    position:absolute;
+    left:9px;
+    top:10px;
 }
-
-@media screen and (max-width:640px) {
-
-	.main-container{
-		width: 90%
-	}
-
-
-	.jumbotron{
-	position: relative;
-	left: 55px;
-	
-   }
-
-   .panel {
-	position: relative;
-	left: 55px;
-	
+.icon.social {
+    float:left;
+    margin:0 5px 0 0;
+    cursor:pointer;
+    background:#6d6e71 ;
+    color:#262626;
+    transition: 0.5s;   
 }
-
-/* end tag */
-
+.icon.social:hover {
+    background:#262626 ;
+    color:#6d6e71;
+    transition: 0.5s;
+    filter:             drop-shadow(0 1px 10px rgba(0,0,0,.8));     
+}
+.icon.social.fb i {
+    left:13px;
+    top:10px;
+}
+.icon.social.tw i {
+    left:11px;
+}
+.icon.social.in i {
+    left:11px;
 }
