@@ -1,3 +1,5 @@
+//Type writing effect in about me
+
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -38,9 +40,12 @@ var TxtType = function(el, toRotate, period) {
         that.tick();
         }, delta);
     };
+  //type writing ends here follow by window.onload
+  
+  //::Here is Carousel JS  
 
     $('#myCarousel').carousel({
-        interval:   2000
+        interval:   5000
     });
     
     var clickEvent = false;
@@ -72,7 +77,7 @@ var TxtType = function(el, toRotate, period) {
 //end of scroll effect
 
 
-
+//tpye wirting onload function.
     window.onload = function() {
         var elements = document.getElementsByClassName('typewrite');
         for (var i=0; i<elements.length; i++) {
