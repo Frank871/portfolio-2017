@@ -1,3 +1,69 @@
+//preloader js window.load
+$(window).load(function(){
+            setTimeout(function(){
+                $('#preloader').velocity({
+                    opacity : 0.1,
+                    translateY: "-80px"
+                }, {
+                    duration: 600,
+                    complete: function(){
+                    $('#hola').velocity({
+                    translateY : "-100%"
+                }, {
+                    duration: 600,
+                    easing: [0.7,0,0.3,1],
+                    complete: function(){
+                        $('.home').addClass('animate-border divide');
+                    }
+                })  
+                    }
+                })
+            },1000)
+        });
+
+
+
+var SPY = function() {
+  function e(a, d, b) {
+    var c, f, g, h;
+    b == a.length ? k.animationComplete = !0 : (g = d.innerHTML, h = Math.floor(21 * Math.random() + 5), c = 32 == a[b] ? 32 : a[b] - h, f = setInterval(function() {
+      d.innerHTML = g + String.fromCharCode(c);
+      c == a[b] ? (clearInterval(f), c = 32, b++, setTimeout(function() {
+        e(a, d, b);
+      }, 8)) : c++;
+    }, 15));
+  }
+  var k = {};
+  return k = {animationComplete:!1, text:function(a) {
+    this.animationComplete = !1;
+    a = document.getElementById(a);
+    for (var d = a.innerHTML, b = [], c = 0;c < d.length;c++) {
+      b.push(d.charCodeAt(c));
+    }
+    a.innerHTML = "";
+    e(b, a, 0);
+  }};
+}();
+
+
+$( 'document' ).ready(function() {
+  
+  // Hide header
+  $( '.header' ).hide();
+  // Transition background
+  $( '.london' ).fadeIn( 1200 );
+  
+  
+  // Timeout for crypto text
+  setTimeout( function() { 
+    $( '.header' ).fadeIn( 'slow' );
+      SPY.text( 'op' );
+  }, 1000);
+
+  
+});
+
+
 //Type writing effect in about me
 
 var TxtType = function(el, toRotate, period) {
@@ -43,38 +109,32 @@ var TxtType = function(el, toRotate, period) {
   //type writing ends here follow by window.onload
   
   //::Here is Carousel JS  
+  
+var $item = $('.carousel .item'); 
+var $wHeight = $(window).height();
+$item.eq(0).addClass('active');
+$item.height($wHeight); 
+$item.addClass('full-screen');
 
-    $('#myCarousel').carousel({
-        interval:   5000
-    });
-    
-    var clickEvent = false;
-    $('#myCarousel').on('click', '.nav a', function() {
-            clickEvent = true;
-            $('.nav li').removeClass('active');
-            $(this).parent().addClass('active');        
-    }).on('slid.bs.carousel', function(e) {
-        if(!clickEvent) {
-            var count = $('.nav').children().length -1;
-            var current = $('.nav li.active');
-            current.removeClass('active').next().addClass('active');
-            var id = parseInt(current.data('slide-to'));
-            if(count == id) {
-                $('.nav li').first().addClass('active');    
-            }
-        }
-        clickEvent = false;
-    });
-
-
-  //scroll effect for anchor id's#
-    $('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 900);
-    return false;
+$('.carousel img').each(function() {
+  var $src = $(this).attr('src');
+  var $color = $(this).attr('data-color');
+  $(this).parent().css({
+    'background-image' : 'url(' + $src + ')',
+    'background-color' : $color
+  });
+  $(this).remove();
 });
-//end of scroll effect
+
+$(window).on('resize', function (){
+  $wHeight = $(window).height();
+  $item.height($wHeight);
+});
+
+$('.carousel').carousel({
+  interval: 6000,
+  pause: "false"
+});
 
 
 //tpye wirting onload function.
