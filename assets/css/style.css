@@ -295,6 +295,7 @@ footer {
 	100% {transform: rotate(360deg); opacity: 0.5;}
 }
 
+/* STYLING BOXES ON ABOUT ME PAGE */
 .div_common {
  position: relative;
  left: 170px;
@@ -360,6 +361,8 @@ section a:nth-child(5):hover i {
 	color: steelblue;
 }
 
+/* @media styles */
+
 @media screen and (max-width:980px) {
 
 
@@ -397,6 +400,8 @@ nav a {left: 250px;}
 .circle{position: relative;right:400px;}
 .rotate{position: relative;right:400px;}
 .div_common{left:130px;}
+
+footer {padding: 15px;}
 
 }
 

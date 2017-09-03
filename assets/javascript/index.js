@@ -1,3 +1,5 @@
+
+
 //preloader js window.load
 $(window).load(function(){
             setTimeout(function(){
@@ -21,7 +23,7 @@ $(window).load(function(){
             },1000)
         });
 
-
+//-------Text animation/random letters----//
 
 var SPY = function() {
   function e(a, d, b) {
@@ -62,6 +64,8 @@ $( 'document' ).ready(function() {
 
   
 });
+
+//-----end of text animation---//
 
 
 //Type writing effect in about me
@@ -108,36 +112,10 @@ var TxtType = function(el, toRotate, period) {
     };
   //type writing ends here follow by window.onload
   
-  //::Here is Carousel JS  
-  
-var $item = $('.carousel .item'); 
-var $wHeight = $(window).height();
-$item.eq(0).addClass('active');
-$item.height($wHeight); 
-$item.addClass('full-screen');
-
-$('.carousel img').each(function() {
-  var $src = $(this).attr('src');
-  var $color = $(this).attr('data-color');
-  $(this).parent().css({
-    'background-image' : 'url(' + $src + ')',
-    'background-color' : $color
-  });
-  $(this).remove();
-});
-
-$(window).on('resize', function (){
-  $wHeight = $(window).height();
-  $item.height($wHeight);
-});
-
-$('.carousel').carousel({
-  interval: 6000,
-  pause: "false"
-});
 
 
 //tpye wirting onload function.
+
     window.onload = function() {
         var elements = document.getElementsByClassName('typewrite');
         for (var i=0; i<elements.length; i++) {
