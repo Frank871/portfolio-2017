@@ -75,7 +75,7 @@ nav a {
 	font-weight: 400;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
 	font-size: 0.90em;
-	left: 510px;
+	left: 500px;
 	
 }
 
@@ -310,7 +310,7 @@ footer {
  margin: 10px 10px 10px 10px;  
 } 
 
-.contact_info{padding:220px;}
+.contact_info{padding:150px;}
 
 /*------------------------------------------------------------------
       						RESET STYLES
@@ -364,8 +364,6 @@ section a:nth-child(5):hover i {
 }
 
 /* @media styles */
-
-
 
 
 @media screen and (max-width:980px) {
